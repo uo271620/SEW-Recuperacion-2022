@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<productos>
+<productos xmlns="http://tempuri.org/productos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tempuri.org/productos productos.xsd">
     <tipo nombre="Lacteos">
         <producto nombreProducto="Batido de cacao" cantidad= "180 ml">
             <descripcion>

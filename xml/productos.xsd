@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/productos" elementFormDefault="qualified" targetNamespace="http://tempuri.org/productos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="productos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="tipo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="producto" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="descripcion" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="recetas" />
+        <xs:element ref="imagen" />
+        <xs:element ref="precio" />
+      </xs:sequence>
+      <xs:attribute name="nombreProducto" type="xs:string" use="required" />
+      <xs:attribute name="cantidad" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recetas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="3" ref="receta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="descripcion" type="xs:string" />
+  <xs:element name="imagen" type="xs:string" />
+  <xs:element name="precio" type="xs:double" />
+  <xs:element name="receta">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="nombreReceta" type="xs:string" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
