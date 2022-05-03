@@ -1,0 +1,11 @@
+<!ELEMENT productos (tipo+)>
+<!ELEMENT tipo (producto+)>
+<!ELEMENT producto (descripcion,recetas?,imagen, precio)>
+<!ELEMENT recetas (receta+)>
+<!ELEMENT descripcion (#PCDATA)> 
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT receta (#PCDATA)>
+<!ATTLIST tipo nombre CDATA #REQUIRED>
+<!ATTLIST producto nombreProducto CDATA #REQUIRED cantidad CDATA #REQUIRED>
+<!ATTLIST receta nombreReceta CDATA #REQUIRED>

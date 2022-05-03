@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<productos>
+    <tipo nombre="Lacteos">
+        <producto nombreProducto="Batido de cacao" cantidad= "180 ml">
+            <descripcion>
+            "Leche semidesnatada (90%), azúcar, cacao desgrasado en polvo (1,6%), 
+            leche desnatada en polvo, espesantes (celulosa, goma de celulosa, carragenanos, goma xantana), 
+            caramelo (azúcar y jarabe de glucosa caramelizados, agua), aromas, canela, corrector de acidez 
+            (hidróxido de sodio), vitamina D. Puede contener huevo."
+            </descripcion>
+            <imagen>"batido.jpg"</imagen>
+            <precio>1.45</precio>
+        </producto>
+        <producto nombreProducto="Leche desnatada" cantidad= "1,5 l">
+            <descripcion>
+                "Leche desnatada"
+            </descripcion>
+            <recetas>
+                <receta nombreReceta="Leche frita">
+                    "Leite fritida a galega, para preparar este dulce tan tradicional 
+                    y casero no necesitamos unos ingredientes especiales, nos basta con 
+                    los de andar por casa, por eso es uno de los unos de los postres sencillos 
+                    con más éxito en la repostería española."
+                </receta>
+                <receta nombreReceta="Torrijas de leche">
+                    "Esta receta original, y a la vez tradicional, 
+                    del dulce más típico en Semana Santa es un postre que está 
+                    basado en una rebanada de pan empapada en leche, rebozada en huevo, 
+                    frita en aceite de oliva virgen extra y aromatizada al gusto con almíbar o, 
+                    en este caso, azúcar y canela"
+                </receta>
+            </recetas>
+            <imagen>"leche.jpg"</imagen>
+            <precio>1.39</precio>
+        </producto>
+    </tipo>
+    <tipo nombre="Frutas">
+        <producto nombreProducto="Manzana Golden" cantidad="1,5 kg">
+            <descripcion>
+            "Manzana muy nutritiva, muy rica en fibra, ayuda al sistema digestivo a limpiarse"
+            </descripcion>
+            <recetas>
+                <receta nombreReceta="tarta de manzana">
+                    "Dentro de las recetas de postres uno de sus básicos por excelencia es la tarta de manzana en hojaldre. 
+                    Aunque existen múltiples variantes, quizá la más clásica sea la tarta de manzana con crema pastelera. 
+                    La crema pastelera preparada en casa es uno de los secretos del éxito de cualquier postre, y 
+                    acompañada de manzanas la combinación perfecta."
+                </receta>
+            </recetas>
+            <imagen>"manzanas.jpg"</imagen>
+            <precio>1.88</precio>
+        </producto>
+    </tipo>
+    <tipo nombre="Bebida">
+        <producto nombreProducto="Green Cola" cantidad="1,5 l">
+            <descripcion>
+                "Agua, dióxido de carbono, color: Sulphite Ammonia Caramel, acidulantes: ácido tartárico y ácido málico, 
+                edulcorantes: esteviol glucósidos y sucralosa, saborizantes naturales, cafeína natural."
+            </descripcion>
+            <imagen>"cola.jpg"</imagen>
+            <precio>1.55</precio>
+        </producto>
+        <producto nombreProducto="Fanta naranja pack 2 botellas" cantidad="2 l">
+            <descripcion>
+                "Agua carbonatada, 8% zumo de naranja a partir de concentrado, azúcar, acidulantes: 
+                ácido cítrico (E-330) y ácido málico (E-296) , estabilizantes: goma arábiga (E-414), 
+                acetato isobutirato de sacarosa (E-444) y ésteres glicéridos de colofonia de madera (E-445), edulcorantes: 
+                acesulfamo K (E-950), aspartamo y neohesperidina DC (E-959), conservador sorbato potásico (E-202), corrector 
+                de acidez citrato sódico, aromas naturales de naranja y otros aromas naturales, antioxidante ácido ascórbico 
+                (E-300) y colorante carotenos (E-160a). Contiene una fuente de fenilalanina"
+            </descripcion>
+            <imagen>"fantas.jpg"</imagen>
+            <precio>2.82</precio>
+        </producto>
+    </tipo>
+    <tipo nombre="Cereal">
+        <producto nombreProducto="Harina de trigo" cantidad="1 kg">
+            <descripcion>
+            "Harina de trigo. Contiene gluten"
+            </descripcion>
+            <recetas>
+                <receta nombreReceta="Pan">
+                    "Es fácil y muy rápido, no requiere de ningún tipo especial de harina y no necesita levados. 
+                    Desde que comenzamos con la receta hasta que sacamos el pan del horno no transcurre más de una hora, 
+                    algo muy de agradecer en momentos de apuro."
+                </receta>
+            </recetas>
+            <imagen>"harina.jpg"</imagen>
+            <precio>0.72</precio>
+        </producto>
+        <producto nombreProducto="Choco Krispies Kellogg's" cantidad="450 g">
+            <descripcion>
+            "Arroz, Azúcar, Cacao desgrasado en polvo, Maltodextrina, Pasta de cacao, Sal, Aroma de malta de CEBADA, Aroma, 
+            Aroma natural. Vitaminas y Minerales: Niacina, Hierro, Vitamina B6, Riboflavina (B2), Tiamina (B1), Ácido fólico, Vitamina D, Vitamina B12"
+            </descripcion>
+            <imagen>"cereales.jpg"</imagen>
+            <precio>2.95</precio>
+        </producto>
+    </tipo>
+</productos>
