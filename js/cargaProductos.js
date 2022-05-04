@@ -17,7 +17,7 @@ gestorXML.openFile = function(file){
                     stringResponse.push("<h3> Nombre: "+producto.attributes[0].value +"</h3>");
                     stringResponse.push("<h4> Cantidad: "+producto.attributes[1].value +"</h4>");
 
-                    var descripcion = producto.getElementsByTagName("descripcion")[0].textContent.split("\"")[1]
+                    var descripcion = producto.getElementsByTagName("descripcion")[0].textContent.split("\"")[1];
                     stringResponse.push("<p>"+ descripcion +"</p>");
                     
                     if(producto.getElementsByTagName("recetas").length==1){
