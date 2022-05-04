@@ -7,7 +7,7 @@
     <meta name="description" content="Pagina principal de la tienda" />
     <meta name="keywords" content="Compra,Tienda, productos, transporte" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tienda Comestibles</title>
+    <title>Tienda Comestibles - Cargar Productos</title>
     <link rel="stylesheet" href="./estilo.css" />
 </head>
 
@@ -18,16 +18,10 @@
         <a href="./cargaXML.html" accesskey="C" tabindex="3">Cargar Productos</a>
         <a href="./aboutUs.html" accesskey="A" tabindex="4">About us</a>
     </nav>
-    <h1>¡Hola, bienvenido a nuestra tienda!</h1>
-    <p>
-        Aquí podrás realizar compras y pedidos de tu tienda favorita, nuestros servicios de transportes estan disponibles de lunes a viernes de 9:00 a 18:00, esperamos que
-        su experiencia sea la mas agradable posible.
-    </p>
-    <h2>Te ofrecemos</h2>
-    <p>
-        Los productos que podrás encontrar en nuestra son todos aquellos necesarios para satisfacer las necesidades nutricionales de cualquier persona, 
-        disponemos de una gran variedad de productos de diferentes partes del mundo, que junto a un envio rapido dentro de la comunidad autónoma Asturiana.
-    </p>
-    <img src="multimedia/tienda.jpg" alt="Tienda" />
+    <h1>Cargar Productos</h1>
+        <section><h2>CargarXML</h2>
+        <input type="file" title = "Cargar Productos" onchange="gestorXML.openFile(this.files);">
+        </section>
+        <script src="./js/cargaProductos.js"></script>
     </body>
 </html>
