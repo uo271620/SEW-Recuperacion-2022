@@ -1,0 +1,51 @@
+/*001*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 28, 108);
+}
+/*001*/
+p{
+    padding: 1vh 2vw;
+}
+/*001*/
+h1,h2{
+    padding: 1vh 2vw;
+}
+
+/*001*/
+nav{
+    display: block;
+    background-color: rgb(71, 150, 207);
+    text-align: start;
+    color:rgb(255, 255, 255);
+}
+/*012*/
+nav a:hover{
+    background-color: rgb(28, 101, 152);
+    color:rgb(255, 255, 255);
+}
+/*002*/
+nav a{
+    font-size: 1.5em;
+    display: inline-block;
+    text-decoration:none;
+    padding: 1vh 5vw;
+    background-color: rgb(71, 150, 207);
+    color:white;
+    justify-content: center;
+    margin: 1vh;
+}
+
+/*001*/
+main {
+    height: 70vh;
+    width: 90vw;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(20, 28, 108);
+    border-radius: 3em;
+}
