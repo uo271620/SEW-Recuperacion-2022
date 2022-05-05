@@ -20,7 +20,8 @@
     </nav>
     <h1>Cargar Productos</h1>
         <section><h2>CargarXML</h2>
-        <input type="file" title = "Cargar Productos" onchange="gestorXML.openFile(this.files);">
+        <label for="cargarProductos"> Seleccione el XML</label>
+        <input type="file" id = "cargarProductos" title = "Cargar Productos" onchange="gestorXML.openFile(this.files);">
         </section>
         <section id="productos">
         </section>
