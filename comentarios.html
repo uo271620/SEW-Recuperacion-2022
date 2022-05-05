@@ -12,6 +12,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/comentarios.js"></script>
     <script src="./js/traductor.js"></script>
+    
 </head>
 <body>
     <nav>
@@ -35,16 +36,16 @@
         <section>
             <h2>Me encanta</h2>
             <p id="comentario-00">Realice compras tanto online como en tienda, y me encantan los productos que tiene</p>
-            <label for="source-00"> Traducir desde</label>
+            <label for="source-00"> Traducir de</label>
             <select id="source-00">
                 <option value="en">en</option>
                 <option value="es" selected>es</option>
                 <option value="fr">fr</option>
             </select>
-            <label for="target-00"> hasta</label>
+            <label for="target-00"> al</label>
             <select id="target-00">
-                <option value="en">en</option>
-                <option value="es" selected>es</option>
+                <option value="en"selected>en</option>
+                <option value="es">es</option>
                 <option value="fr">fr</option>
             </select>
             <button id="traductor-00" onclick="traductor.traduce(this.id)">Traducir</button>
@@ -52,6 +53,20 @@
         <section>
             <h2>Buenos precios</h2>
             <p id="comentario-01">Realice compras en sus tiendas fisicas y tienen muy buenos precios</p>
+            <label for="source-01"> Traducir de</label>
+            <select id="source-01">
+                <option value="en">en</option>
+                <option value="es" selected>es</option>
+                <option value="fr">fr</option>
+            </select>
+            <label for="target-01"> al</label>
+            <select id="target-01">
+                <option value="en"selected>en</option>
+                <option value="es">es</option>
+                <option value="fr">fr</option>
+            </select>
+            <button id="traductor-01" onclick="traductor.traduce(this.id)">Traducir</button>
+
         </section>
     </section>
 </body>
