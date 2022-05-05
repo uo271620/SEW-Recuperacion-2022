@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Adolfo Rodriguez Sanchez" />
+    <meta name="description" content="Mapa tiendas fisicas" />
+    <meta name="keywords" content="Compra,Tienda, productos, transporte" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda Comestibles</title>
+    <link rel="stylesheet" href="./estiloCargaXML.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/comentarios.js"></script>
+    <script src="./js/traductor.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="./index.html" accesskey="H"  tabindex="1">Home</a>
+        <a href="./direcciones.html" accesskey="D" tabindex="2">Direcciones</a>
+        <a href="./cargaXML.html" accesskey="C" tabindex="3">Cargar Productos</a>
+        <a href="./mapa.html" accesskey="M" tabindex="4">Mapa</a>
+        <a href="./aboutUs.html" accesskey="A" tabindex="5">About us</a>
+    </nav>
+    
+    <h1>Comentarios</h1>
+    <label for="asunto">Asunto:</label><br>
+    <input type="text" id="asunto" name="asunto" placeholder="Asunto"><br>
+    <label for="contenido" >Contenido:</label><br>
+    <textarea id="contenido" name="contenido" rows="10" cols="40" placeholder="Escriba aqui su comentario"></textarea><br><br>
+    <button id="enviar">Enviar</button>
+
+    <section id="comentarios">
+        <section>
+            <h2>Me encanta</h2>
+            <p id="comentario-00">Realice compras tanto online como en tienda, y me encantan los productos que tiene</p>
+            <select id="source">
+                <option value="en">en</option>
+                <option value="es" selected>es</option>
+                <option value="fr">fr</option>
+            </select>
+            <select id="target">
+                <option value="en">en</option>
+                <option value="es" selected>es</option>
+                <option value="fr">fr</option>
+            </select>
+            <button id="traductor-00" onclick="traductor.traduce(this.id)">Traducir</button>
+        </section>
+        <section>
+            <h2>Buenos precios</h2>
+            <p>Realice compras en sus tiendas fisicas y tienen muy buenos precios</p>
+        </section>
+    </section>
+</body>
+</html>
