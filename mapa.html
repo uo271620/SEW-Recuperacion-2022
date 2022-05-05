@@ -4,28 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Adolfo Rodriguez Sanchez" />
-    <meta name="description" content="Pagina cargar XML" />
+    <meta name="description" content="Mapa tiendas fisicas" />
     <meta name="keywords" content="Compra,Tienda, productos, transporte" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tienda Comestibles - Cargar Productos</title>
-    <link rel="stylesheet" href="./estiloCargaXML.css" />
+    <title>Tienda Comestibles</title>
+    <link rel="stylesheet" href="./estilo.css" />
+    <script src="./js/mapa.js"></script>
 </head>
-
-<body>
     <nav>
         <a href="./index.html" accesskey="H"  tabindex="1">Home</a>
         <a href="./direcciones.html" accesskey="D" tabindex="2">Direcciones</a>
         <a href="./cargaXML.html" accesskey="C" tabindex="3">Cargar Productos</a>
         <a href="./aboutUs.html" accesskey="A" tabindex="4">About us</a>
     </nav>
-    <h1>Cargar Productos</h1>
-        <section><h2>CargarXML</h2>
-        <label for="cargarProductos"> Seleccione el XML</label>
-        <input type="file" id = "cargarProductos" title = "Cargar Productos" onchange="gestorXML.openFile(this.files);">
-        </section>
-        <section id="productos">
-            <h3>Productos Cargados</h3>
-        </section>
-        <script src="./js/cargaProductos.js"></script>
-    </body>
+    <body>
+    <h1>Uso de geolocalización para crear un mapa dinámico de Google maps</h1>
+    <p>Representa la imagen de un mapa dinámico y la posición del usuario</p>
+    <main id="mapa"></main>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlguRmXRzYY3kSTUxMfum7y_UVeeyCbCs&callback=miMapa.initMap"></script>
+</body>
 </html>
