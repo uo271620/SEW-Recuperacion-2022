@@ -1,18 +1,19 @@
 <!DOCTYPE HTML>
 
-<html lang="es"><head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Adolfo Rodriguez Sanchez">
-    <meta name="description" content="Pagina principal de la tienda">
-    <meta name="keywords" content="Compra,Tienda, productos, transporte">
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Adolfo Rodriguez Sanchez" />
+    <meta name="description" content="Pagina principal de la tienda" />
+    <meta name="keywords" content="Compra,Tienda, productos, transporte" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda Comestibles - Cargar Productos</title>
-    <link rel="stylesheet" href="./estiloCargaXML.css">
+    <link rel="stylesheet" href="./estiloCargaXML.css" />
 </head>
 
 <body>
     <nav>
-        <a href="./index.html" accesskey="H" tabindex="1">Home</a>
+        <a href="./index.html" accesskey="H"  tabindex="1">Home</a>
         <a href="./direcciones.html" accesskey="D" tabindex="2">Direcciones</a>
         <a href="./cargaXML.html" accesskey="C" tabindex="3">Cargar Productos</a>
         <a href="./aboutUs.html" accesskey="A" tabindex="4">About us</a>
@@ -20,39 +21,10 @@
     <h1>Cargar Productos</h1>
         <section><h2>CargarXML</h2>
         <label for="cargarProductos"> Seleccione el XML</label>
-        <input type="file" id="cargarProductos" title="Cargar Productos" onchange="gestorXML.openFile(this.files);">
+        <input type="file" id = "cargarProductos" title = "Cargar Productos" onchange="gestorXML.openFile(this.files);">
         </section>
-        <section id="productos"><h3>Productos Cargados</h3><section><h2>Lacteos</h2><h3> Nombre: Batido de cacao</h3><h4> Cantidad: 180 ml</h4><p>Leche semidesnatada (90%), azúcar, cacao desgrasado en polvo (1,6%), 
-            leche desnatada en polvo, espesantes (celulosa, goma de celulosa, carragenanos, goma xantana), 
-            caramelo (azúcar y jarabe de glucosa caramelizados, agua), aromas, canela, corrector de acidez 
-            (hidróxido de sodio), vitamina D. Puede contener huevo.</p><img src="./multimedia/batido.jpg" alt="batido"><p>Precio: 1.45€</p><h3> Nombre: Leche desnatada</h3><h4> Cantidad: 1,5 l</h4><p>Leche desnatada</p><h3>Leche frita</h3><p>
-                    Leite fritida a galega, para preparar este dulce tan tradicional 
-                    y casero no necesitamos unos ingredientes especiales, nos basta con 
-                    los de andar por casa, por eso es uno de los unos de los postres sencillos 
-                    con más éxito en la repostería española."
-                </p><h3>Torrijas de leche</h3><p>
-                    Esta receta original, y a la vez tradicional, 
-                    del dulce más típico en Semana Santa es un postre que está 
-                    basado en una rebanada de pan empapada en leche, rebozada en huevo, 
-                    frita en aceite de oliva virgen extra y aromatizada al gusto con almíbar o, 
-                    en este caso, azúcar y canela"
-                </p><img src="./multimedia/leche.jpg" alt="leche"><p>Precio: 1.39€</p></section><section><h2>Frutas</h2><h3> Nombre: Manzana Golden</h3><h4> Cantidad: 1,5 kg</h4><p>Manzana muy nutritiva, muy rica en fibra, ayuda al sistema digestivo a limpiarse</p><h3>tarta de manzana</h3><p>
-                    Dentro de las recetas de postres uno de sus básicos por excelencia es la tarta de manzana en hojaldre. 
-                    Aunque existen múltiples variantes, quizá la más clásica sea la tarta de manzana con crema pastelera. 
-                    La crema pastelera preparada en casa es uno de los secretos del éxito de cualquier postre, y 
-                    acompañada de manzanas la combinación perfecta."
-                </p><img src="./multimedia/manzanas.jpg" alt="manzanas"><p>Precio: 1.88€</p></section><section><h2>Bebida</h2><h3> Nombre: Green Cola</h3><h4> Cantidad: 1,5 l</h4><p>Agua, dióxido de carbono, color: Sulphite Ammonia Caramel, acidulantes: ácido tartárico y ácido málico, 
-                edulcorantes: esteviol glucósidos y sucralosa, saborizantes naturales, cafeína natural.</p><img src="./multimedia/cola.jpg" alt="cola"><p>Precio: 1.55€</p><h3> Nombre: Fanta naranja pack 2 botellas</h3><h4> Cantidad: 2 l</h4><p>Agua carbonatada, 8% zumo de naranja a partir de concentrado, azúcar, acidulantes: 
-                ácido cítrico (E-330) y ácido málico (E-296) , estabilizantes: goma arábiga (E-414), 
-                acetato isobutirato de sacarosa (E-444) y ésteres glicéridos de colofonia de madera (E-445), edulcorantes: 
-                acesulfamo K (E-950), aspartamo y neohesperidina DC (E-959), conservador sorbato potásico (E-202), corrector 
-                de acidez citrato sódico, aromas naturales de naranja y otros aromas naturales, antioxidante ácido ascórbico 
-                (E-300) y colorante carotenos (E-160a). Contiene una fuente de fenilalanina</p><img src="./multimedia/fantas.jpg" alt="fantas"><p>Precio: 2.82€</p></section><section><h2>Cereal</h2><h3> Nombre: Harina de trigo</h3><h4> Cantidad: 1 kg</h4><p>Harina de trigo. Contiene gluten</p><h3>Pan</h3><p>
-                    Es fácil y muy rápido, no requiere de ningún tipo especial de harina y no necesita levados. 
-                    Desde que comenzamos con la receta hasta que sacamos el pan del horno no transcurre más de una hora, 
-                    algo muy de agradecer en momentos de apuro."
-                </p><img src="./multimedia/harina.jpg" alt="harina"><p>Precio: 0.72€</p><h3> Nombre: Choco Krispies Kellogg's</h3><h4> Cantidad: 450 g</h4><p>Arroz, Azúcar, Cacao desgrasado en polvo, Maltodextrina, Pasta de cacao, Sal, Aroma de malta de CEBADA, Aroma, 
-            Aroma natural. Vitaminas y Minerales: Niacina, Hierro, Vitamina B6, Riboflavina (B2), Tiamina (B1), Ácido fólico, Vitamina D, Vitamina B12</p><img src="./multimedia/cereales.jpg" alt="cereales"><p>Precio: 2.95€</p></section></section>
+        <section id="productos">
+        </section>
         <script src="./js/cargaProductos.js"></script>
-    
-</body></html>
+    </body>
+</html>
