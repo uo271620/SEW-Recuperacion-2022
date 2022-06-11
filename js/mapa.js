@@ -57,7 +57,13 @@ function initMap(){
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-        
+            const icon = 'https://maps.gstatic.com/mapfiles/ms2/micons/green.png';
+            var marker6 = new google.maps.Marker({
+              position: pos,
+              title:"Tu posicion",
+              icon: icon,
+            });
+            marker6.setMap(mapaGeoposicionado);
             
             mapaGeoposicionado.setCenter(pos);
           }, function() {

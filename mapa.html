@@ -7,21 +7,24 @@
     <meta name="description" content="Mapa tiendas fisicas" />
     <meta name="keywords" content="Compra,Tienda, productos, transporte" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tienda Comestibles</title>
+    <title>Tienda Comestibles - Mapa</title>
     <link rel="stylesheet" href="./estiloMapa.css" />
     <script src="./js/mapa.js"></script>
 </head>
 <body>
     <nav>
         <a href="./index.html" accesskey="H"  tabindex="1">Home</a>
-        <a href="./direcciones.html" accesskey="D" tabindex="2">Direcciones</a>
+        <a href="./mapa.html" accesskey="M" tabindex="2">Nuestras tiendas</a>
         <a href="./cargaXML.html" accesskey="C" tabindex="3">Cargar Productos</a>
-        <a href="./mapa.html" accesskey="M" tabindex="4">Mapa</a>
-        <a href="./aboutUs.html" accesskey="A" tabindex="5">About us</a>
+        <a href="./direcciones.html" accesskey="D" tabindex="4">Direcciones</a>
+        <a href="./comentarios.html" accesskey="F" tabindex="5">Foro</a>
+        <a href="./paginaPHP.php" accesskey="B" tabindex="6">Base de datos</a>
+        <a href="./aboutUs.html" accesskey="A" tabindex="7">Sobre nosotros</a>
     </nav>
     
     <h1>Uso de geolocalización para crear un mapa dinámico de Google maps</h1>
     <p>Se muestran las tiendas fisicas disponibles</p>
+    <p>Las tiendas físicas disponibles en estos momentos se marcaran en el mapa con un icono rojo. El mapa se centra a la posición del usuario automaticamente</p>
     <main id="mapa"></main>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlguRmXRzYY3kSTUxMfum7y_UVeeyCbCs&callback=miMapa.initMap"></script>
 </body>
