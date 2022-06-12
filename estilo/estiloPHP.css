@@ -32,7 +32,7 @@ li{
 }
 /*011*/
 input[type=button], input[type=submit] {
-    background-color: rgb(71, 150, 207);
+    background-color: rgb(40, 102, 147);
     border: none;
     border-radius: 25px;
     color: white;
