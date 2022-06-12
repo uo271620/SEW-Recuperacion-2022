@@ -25,6 +25,7 @@
         <a href='./aboutUs.html' accesskey='A' tabindex='7'>Sobre nosotros</a>
     </nav>
     <h1>Opciones</h1>
+    <p>Aquí podrás realizar tareas relacionadas con la base de datos</p>
     <nav>
         <form action='#' method='post' name='botones'>
             <ul>
