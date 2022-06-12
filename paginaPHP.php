@@ -83,7 +83,7 @@
                 <section>
                     <form action='#' method='post' name='botones'>
                         <h2>Tienda</h2>
-                        <p>Seleccione una tienda</p>
+                        <label for='tienda'>Seleccione una tienda</label><br/>
                         <select title='tienda' id='tienda' name='tienda'>
                             ";
                                 foreach($direcciones as $direccion){
@@ -114,10 +114,10 @@
                 <p>Direccion envio:</p>
                 <input title='direccion' type='text' id='direccion' name='direccion'/>
 
-                <p>Nombre:</p>
+                <label for='name'>Nombre:</label><br/>
                 <input title='name' type='text' id='name' name='name' value='' />
 
-                <p>Transportista:</p>
+                <label for='transportista'>Transportista:</label><br/>
                 <select title='transportista' id='transportista' name='transportista'>
                 ";
                     foreach($trasnportistas as $trasnportista){
@@ -125,7 +125,7 @@
                     }
                 echo "
                 </select>
-                <p>Producto:</p>
+                <label for='producto'>Producto:</label><br/>
                 <select title='producto' id='producto' name='producto'>
                 ";
                     foreach($productos as $producto){
@@ -134,7 +134,7 @@
                 echo "
                 </select>
 
-                <p>Cantidad:</p>
+                <label for='cantidad'>Cantidad:</label><br/>
                 <input title='cantidad' type='number' id='cantidad' name='cantidad' value='' min='1' /><br/>
 
                 <input type = 'submit' class='button' name = 'buttonPedido' value = 'Hacer Pedido'/>
@@ -157,7 +157,7 @@
                 <form action='#' method='post' name='botones'>
                     <h2>Modificar Estado Pedido</h2>
 
-                    <p>Pedido:</p>
+                    <label for='pedido'>Pedido:</label><br/>
                     <select title='pedido' id='pedido' name='pedido'>
                     ";
                         foreach($pedidos as $pedido){
@@ -166,7 +166,7 @@
                     echo "
                     </select>
 
-                    <p>Estado:</p>
+                    <label for='estado'>Estado:</label><br/>
                     <select title='estado' id='estado' name='estado'>
                         <option value='FINALIZADO'>FINALIZADO</option>
                         <option value='ENCAMINO'>ENCAMINO</option>
