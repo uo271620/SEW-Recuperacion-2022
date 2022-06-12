@@ -111,28 +111,28 @@
             <section>
             <form action='#' method='post' name='botones'>
                 <h2>Realizar Pedido</h2>
-                <p>Direccion envio:</p>
-                <input title='direccion' type='text' id='direccion' name='direccion'/>
+                <label for='direccion'>Direccion envio:</label><br/>
+                <input title='direccion' type='text' id='direccion' name='direccion'/><br/>
 
                 <label for='name'>Nombre:</label><br/>
-                <input title='name' type='text' id='name' name='name' value='' />
+                <input title='name' type='text' id='name' name='name' value='' /><br/>
 
                 <label for='transportista'>Transportista:</label><br/>
-                <select title='transportista' id='transportista' name='transportista'>
+                <select title='transportista' id='transportista' name='transportista'><br/>
                 ";
                     foreach($trasnportistas as $trasnportista){
                         echo "<option value='".$trasnportista['id']."'>".$trasnportista['nombre']."-".$trasnportista['apellido']."</option>";
                     }
                 echo "
-                </select>
+                </select><br/>
                 <label for='producto'>Producto:</label><br/>
-                <select title='producto' id='producto' name='producto'>
+                <select title='producto' id='producto' name='producto'><br/>
                 ";
                     foreach($productos as $producto){
                         echo "<option value='".$producto['id']."'>".$producto['nombre']." - ".$producto['precio']. " EUR</option>";
                     }
                 echo "
-                </select>
+                </select><br/>
 
                 <label for='cantidad'>Cantidad:</label><br/>
                 <input title='cantidad' type='number' id='cantidad' name='cantidad' value='' min='1' /><br/>
@@ -164,13 +164,13 @@
                             echo "<option value='".$pedido['id']."'>".$pedido['id']." - ".$pedido['estado']. "</option>";
                         }
                     echo "
-                    </select>
+                    </select><br/>
 
                     <label for='estado'>Estado:</label><br/>
                     <select title='estado' id='estado' name='estado'>
                         <option value='FINALIZADO'>FINALIZADO</option>
                         <option value='ENCAMINO'>ENCAMINO</option>
-                    </select>
+                    </select><br/>
 
                     <input type = 'submit' class='button' name = 'buttonEstadoPedido' value = 'Editar estado'/>
                 </form>
