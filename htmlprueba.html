@@ -35,31 +35,24 @@
         </nav> 
     
         
-        <h1>Conexión establecida</h1>
-            <p>Conexión establecidalocalhost via TCP/IP</p>
-                <section>
-                <form action="#" method="post" name="botones">
-                    <h2>Realizar Pedido</h2>
-                    <label for="direccion">Direccion envio:</label><br>
-                    <input title="direccion" type="text" id="direccion" name="direccion"><br>
+        <h1>Conexión establecida</h1><p>Conexión establecidalocalhost via TCP/IP</p>
+                    <section>
+                    <form action="#" method="post" name="botones">
+                        <h2>Modificar Estado Pedido</h2>
     
-                    <label for="name">Nombre:</label><br>
-                    <input title="name" type="text" id="name" name="name" value=""><br>
+                        <label for="pedido">Pedido:</label><br>
+                        <select title="pedido" id="pedido" name="pedido">
+                        <option value="62a616dbe5bd0">62a616dbe5bd0 - REALIZADO</option>
+                        </select><br>
     
-                    <label for="transportista">Transportista:</label><br>
-                    <select title="transportista" id="transportista" name="transportista">
-                    <option value="62a60bc85505c">Paco-Gonzalez</option><option value="62a60bc855621">Elena-Fernandez</option><option value="62a60bc866d1b">Jose-Dominguez</option><option value="62a60bc8677f2">Saul-Diaz</option>
-                    </select><br>
-                    <label for="producto">Producto:</label><br>
-                    <select title="producto" id="producto" name="producto">
-                    <option value="62a60bc82b9ca">Coca-cola - 2 EUR</option><option value="62a60bc82b9cb">Fanta - 2 EUR</option><option value="62a60bc82b9cc">Leche - 1 EUR</option><option value="62a60bc82b9cd">Cereales - 3 EUR</option><option value="62a60bc82b9ce">Doritos - 2 EUR</option><option value="62a60bc82b9cf">Helado - 1 EUR</option><option value="62a60bc82b9d0">Tomate - 1 EUR</option><option value="62a60bc82b9d1">Pizza - 4 EUR</option><option value="62a60bc82b9d2">Zanahoria - 1 EUR</option><option value="62a60bc82b9d3">Patatas - 3 EUR</option><option value="62a60bc82b9d4">Lechuga - 1 EUR</option>
-                    </select><br>
+                        <label for="estado">Estado:</label><br>
+                        <select title="estado" id="estado" name="estado">
+                            <option value="FINALIZADO">FINALIZADO</option>
+                            <option value="ENCAMINO">ENCAMINO</option>
+                        </select><br>
     
-                    <label for="cantidad">Cantidad:</label><br>
-                    <input title="cantidad" type="number" id="cantidad" name="cantidad" value="" min="1"><br>
-    
-                    <input type="submit" class="button" name="buttonPedido" value="Hacer Pedido">
-                </form>
-                </section>
-                
+                        <input type="submit" class="button" name="buttonEstadoPedido" value="Editar estado">
+                    </form>
+                    </section>
+                    
     </body></html>
