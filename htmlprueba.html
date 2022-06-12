@@ -2,17 +2,11 @@
 
 <html lang="es"><head>
     <meta charset="UTF-8">
-    <meta name="author" content="Adolfo Rodriguez Sanchez">
-    <meta name="description" content="Mapa tiendas fisicas">
-    <meta name="keywords" content="Compra,Tienda, productos, transporte">
-    <title>Tienda Comestibles</title>
-    <link rel="stylesheet" href="./estilo/estiloCargaXML.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/comentarios.js"></script>
-    <script src="./js/traductor.js"></script>
-    
+    <title>Tienda Comestibles - Base de datos</title>
+	<link rel="stylesheet" href="estiloPHP.css">
 </head>
 <body>
+    
     <nav>
         <a href="./index.html" accesskey="H" tabindex="1">Home</a>
         <a href="./mapa.html" accesskey="M" tabindex="2">Nuestras tiendas</a>
@@ -22,52 +16,19 @@
         <a href="./paginaPHP.php" accesskey="B" tabindex="6">Base de datos</a>
         <a href="./aboutUs.html" accesskey="A" tabindex="7">Sobre nosotros</a>
     </nav>
-    <h1>Comentarios</h1>
+    <h1>Opciones</h1>
+    <nav>
+        <form action="#" method="post" name="botones">
+            <ul>
+                <li><input type="submit" class="button" name="generateDataBase" value="Crear Base de Datos"></li>
+                <li><input type="submit" class="button" name="buttonInsert" value="Insertar datos prueba"></li>
+                <li><input type="submit" class="button" name="buttonSearch" value="Productos por tienda"></li>
+                <li><input type="submit" class="button" name="buttoninterfazPedido" value="Realizar Pedido"></li>
+                <li><input type="submit" class="button" name="buttonModificar" value="Modificar Estado Pedido"></li>
+            </ul>
+        </form>
+    </nav> 
+
     
-    <label for="asunto">Asunto:</label><br>
-    <input type="text" id="asunto" name="asunto" placeholder="Asunto"><br>
-    <label for="contenido">Contenido:</label><br>
-    <textarea id="contenido" name="contenido" rows="10" cols="40" placeholder="Escriba aqui su comentario"></textarea><br><br>
-    <button id="enviar">Enviar</button>
-
-    <section id="comentarios">
-        <h2>Comentarios realizados</h2>
-        <p>Estos son los comentarios de nuestros clientes</p>
-        <section>
-            <h2>Me encanta</h2>
-            <p id="comentario-00">Realicé compras tanto online como en tienda, y me encantan los productos que tienen</p>
-            <label for="source-00"> Traducir de</label>
-            <select id="source-00">
-                <option value="en">en</option>
-                <option value="es" selected="">es</option>
-                <option value="fr">fr</option>
-            </select>
-            <label for="target-00"> al</label>
-            <select id="target-00">
-                <option value="en" selected="">en</option>
-                <option value="es">es</option>
-                <option value="fr">fr</option>
-            </select>
-            <button id="traductor-00" onclick="traductor.traduce(this.id)">Traducir</button>
-        </section>
-        <section>
-            <h2>Buenos precios</h2>
-            <p id="comentario-01">Realicé compras en sus tiendas físicas y tienen muy buenos precios</p>
-            <label for="source-01"> Traducir de</label>
-            <select id="source-01">
-                <option value="en">en</option>
-                <option value="es" selected="">es</option>
-                <option value="fr">fr</option>
-            </select>
-            <label for="target-01"> al</label>
-            <select id="target-01">
-                <option value="en" selected="">en</option>
-                <option value="es">es</option>
-                <option value="fr">fr</option>
-            </select>
-            <button id="traductor-01" onclick="traductor.traduce(this.id)">Traducir</button>
-
-        </section>
-    <section><h2>af</h2><p id="comentario-02">af</p><label for="source-02"> Traducir de</label><select id="source-02"><option value="en">en</option><option value="es" selected="">es</option><option value="fr">fr</option></select><label for="target-02"> Traducir de</label><select id="target-02"><option value="en" selected="">en</option><option value="es">es</option><option value="fr">fr</option></select> <button id="traductor-02" onclick="traductor.traduce(this.id)">Traducir</button></section><section><h2>2</h2><p id="comentario-03">adf</p><label for="source-03"> Traducir de</label><select id="source-03"><option value="en">en</option><option value="es" selected="">es</option><option value="fr">fr</option></select><label for="target-03"> Traducir de</label><select id="target-03"><option value="en" selected="">en</option><option value="es">es</option><option value="fr">fr</option></select> <button id="traductor-03" onclick="traductor.traduce(this.id)">Traducir</button></section><section><h2>45612</h2><p id="comentario-04">assfsfa</p><label for="source-04"> Traducir de</label><select id="source-04"><option value="en">en</option><option value="es" selected="">es</option><option value="fr">fr</option></select><label for="target-04"> Traducir de</label><select id="target-04"><option value="en" selected="">en</option><option value="es">es</option><option value="fr">fr</option></select> <button id="traductor-04" onclick="traductor.traduce(this.id)">Traducir</button></section></section>
-
+    
 </body></html>
