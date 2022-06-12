@@ -93,8 +93,8 @@ section form p,option{
     font-size: 0.8em;
 }
 /*001*/ 
-select,input{
+select, input{
     padding: 0;
     font-size: 0.8em;
-    width: 60vw;
+    max-width: 60vw;
 }
