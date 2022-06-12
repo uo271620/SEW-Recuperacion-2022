@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"/>
+<meta charset="UTF-8" />
+    <meta name="author" content="Adolfo Rodriguez Sanchez" />
+    <meta name="description" content="Pagina de base de datos" />
+    <meta name="keywords" content="Base de datos,Pedidos, Productos" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda Comestibles - Base de datos</title>
-	<link rel="stylesheet" href="estiloPHP.css"/>
+	<link rel="stylesheet" href="./estilo/estiloPHP.css"/>
 </head>
 <body>
     <?php
