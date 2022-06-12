@@ -88,12 +88,12 @@ section {
   }
   
 /*003*/ 
-section form p,input,option{
+section form p,option{
     padding: 0;
     font-size: 0.8em;
 }
 /*001*/ 
-select{
+select,input{
     padding: 0;
     font-size: 0.8em;
     width: 60vw;
