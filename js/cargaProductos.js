@@ -8,7 +8,8 @@ gestorXML.openFile = function(file){
         lector.onload = function (evento) {
             var responseDoc = new DOMParser().parseFromString(lector.result, 'application/xml');
             var stringResponse = [];
-            stringResponse.push("<h3>Productos Cargados</h3>");
+            stringResponse.push("<h3>Productos Cargados</h3>"+
+            "<p>Tras cargar un archivo XML valido, los productos apareceran el la siguiente sección</p>");
             for (var i = 0; i< responseDoc.getElementsByTagName("tipo").length; i++){
                 var tipo = responseDoc.getElementsByTagName("tipo")[i];
                 stringResponse.push("<section>");
